@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right,#ff666d,#fa538d,#89379c);
+   
+}
+
+.container{
+    width: 50vw;
+    height: 60vh;
+   display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "login";
+     box-shadow: 0 0 17px 10px rgb(0 0 0 /30%);
+     border-radius: 20px;
+     background: white;
+     overflow: hidden;
+}
+
+.design{
+    grid-area: design;
+    
+    display: none;
+    position: relative;
+
+
+}
+
+.login{
+    grid-area: login;
+
+}
+
+.rotate-45{
+    transform: rotate(-45deg);
+}
+
+.design .pill-1{
+    position: absolute;
+    bottom: 0;
+    left: -40px;
+    width: 80px;
+    height: 200px;
+    background: linear-gradient(to bottom right,#ff666d,#fa538d,#89379c);
+    border-radius: 40px;
+}
+
+.design .pill-2{
+    position: absolute;
+    width: 180px;
+    height: 458px;
+    background: linear-gradient(to bottom right, #ff666d, #fa538d, #89379c);
+    border-radius: 200px;
+    top: -194px;
+    left: -65px;
+    border: 30px solid #e2c5e2;
+
+
+}
+
+.design .pill-3{
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    background: linear-gradient(to bottom right,#ff666d,#fa538d,#89379c);
+    border-radius: 70px;
+     top: -139px;
+    left: 117px;
+
+}
+
+.design .pill-4{
+    position: absolute;
+    width: 120px;
+    height: 300px;
+    background: linear-gradient(to bottom right,#ff666d,#fa538d);
+    border-radius: 70px;
+    bottom: -180px;
+    left: 220px;
+
+}
+
+.login{
+    grid-area: login;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: #fff;
+}
+
+.login .title{
+    margin: 15px 0px;
+}
+
+.text-input{
+    background: #e6e6e6;
+    height: 40px;
+    display: flex;
+    width: 60%;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0px 15px;
+     margin: 5px 0px;
+
+}
+
+.text-input input{
+    border: none;
+    outline: none;
+    background: none;
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+   
+}
+
+::placeholder
+{  columns: #686868;
+
+}
+
+
+.login-btn{
+ width: 64%;
+ padding: 10px;
+ color: #fff;
+ border: none;
+ border-radius: 20px;
+ background: linear-gradient(to bottom right,#ff666d,#fa538d,#89379c);
+ margin-top: 10px;
+
+}
+
+.text-input input i {
+    columns: #686868;
+
+}
+
+a{
+    font-size: 12px;
+    cursor: pointer;
+    color: #9a9a9a;
+    user-select: none;
+    text-decoration: none;
+}
+
+a.forgot
+{
+margin-top: 15px;
+}
+
+.creat{
+display: flex;
+align-items: center;
+position: absolute;
+bottom: 10px;
+
+}
+
+.creat i{
+    color: #9a9a9a;
+    margin-left: 10px;
+}
+
+
+
+
+@media (min-width: 768px){
+    .container{
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "design login";
+    }
+
+    .design{
+        display: block;
+    }
+
+
+}
+
+
+
+@media (min-width: 520px){
+    .container{
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "design login";
+       
+    }
+
+
+   
+
+}
